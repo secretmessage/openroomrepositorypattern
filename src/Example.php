@@ -1,4 +1,4 @@
-<?php namespace Example;
+<?php
 
 class Example {
 
