@@ -1,0 +1,47 @@
+Reservations:
+    type: entity
+    table: reservations
+    id:
+        reservationid:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        start:
+            type: datetime
+            nullable: false
+            options:
+                default: '''0000-00-00 00:00:00'''
+            column: START
+        end:
+            type: datetime
+            nullable: false
+            options:
+                default: '''0000-00-00 00:00:00'''
+            column: END
+        roomid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        username:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        numberingroup:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        timeofrequest:
+            type: datetime
+            nullable: false
+            options:
+                default: current_timestamp()
+    lifecycleCallbacks: {  }

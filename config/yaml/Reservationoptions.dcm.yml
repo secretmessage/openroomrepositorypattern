@@ -1,0 +1,29 @@
+Reservationoptions:
+    type: entity
+    table: reservationoptions
+    indexes:
+        reservationid:
+            columns:
+                - reservationid
+    id:
+        optionname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            id: true
+        reservationid:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+    fields:
+        optionvalue:
+            type: string
+            nullable: false
+            length: 700
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }

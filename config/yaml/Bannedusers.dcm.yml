@@ -1,0 +1,14 @@
+Bannedusers:
+    type: entity
+    table: bannedusers
+    id:
+        username:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    lifecycleCallbacks: {  }

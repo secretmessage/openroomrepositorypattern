@@ -1,0 +1,60 @@
+Optionalfields:
+    type: entity
+    table: optionalfields
+    uniqueConstraints:
+        optionformname:
+            columns:
+                - optionformname
+    id:
+        optionname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        optionformname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                comment: 'no spaces, a-z only'
+        optiontype:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                comment: '0 = text, 1 = select'
+        optionchoices:
+            type: string
+            nullable: false
+            length: 700
+            options:
+                fixed: false
+                comment: '";" delimited'
+        optionorder:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        optionquestion:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        optionprivate:
+            type: boolean
+            nullable: false
+            options:
+                default: '0'
+        optionrequired:
+            type: boolean
+            nullable: false
+            options:
+                default: '0'
+    lifecycleCallbacks: {  }

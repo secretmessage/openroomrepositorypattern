@@ -1,0 +1,32 @@
+Roomhours:
+    type: entity
+    table: roomhours
+    id:
+        roomhoursid:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        roomid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        dayofweek:
+            type: smallint
+            nullable: false
+            options:
+                unsigned: false
+        start:
+            type: time
+            nullable: false
+            column: START
+        end:
+            type: time
+            nullable: false
+            column: END
+    lifecycleCallbacks: {  }

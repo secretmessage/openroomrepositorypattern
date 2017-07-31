@@ -1,0 +1,36 @@
+Deletedrooms:
+    type: entity
+    table: deletedrooms
+    id:
+        roomid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        roomname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        roomcapacity:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        roomgroupid:
+            type: bigint
+            nullable: false
+            options:
+                unsigned: false
+        roomdescription:
+            type: text
+            nullable: false
+            length: null
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }
