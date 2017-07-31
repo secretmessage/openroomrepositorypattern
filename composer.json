@@ -1,15 +1,11 @@
 {
   "require": {
-    "components/jquery": "1.12.4",
-    "twbs/bootstrap": "v3.3.6",
-    "phpunit/phpunit": "^5.5",
-    "katzgrau/klogger": "dev-master",
-    "mobiledetect/mobiledetectlib": "^2.8",
-    "twig/twig": "~2.0"
+    "doctrine/orm": "^2.5",
+    "symfony/yaml": "2.*"
   },
   "autoload": {
-    "psr-4": {
-      "model\\": "model"
+    "psr-0": {
+      "": "src/"
     }
   }
 }
