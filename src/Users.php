@@ -156,3 +156,4 @@ class Users
         return $this->active;
     }
 }
+

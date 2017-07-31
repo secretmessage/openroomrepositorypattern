@@ -32,3 +32,4 @@ class Bannedusers
         return $this->username;
     }
 }
+

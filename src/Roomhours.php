@@ -156,3 +156,4 @@ class Roomhours
         return $this->end;
     }
 }
+

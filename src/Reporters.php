@@ -32,3 +32,4 @@ class Reporters
         return $this->username;
     }
 }
+

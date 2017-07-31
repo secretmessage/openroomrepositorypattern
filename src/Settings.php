@@ -63,3 +63,4 @@ class Settings
         return $this->settingvalue;
     }
 }
+

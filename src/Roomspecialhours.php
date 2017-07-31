@@ -187,3 +187,4 @@ class Roomspecialhours
         return $this->end;
     }
 }
+

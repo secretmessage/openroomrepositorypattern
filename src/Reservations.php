@@ -218,3 +218,4 @@ class Reservations
         return $this->timeofrequest;
     }
 }
+

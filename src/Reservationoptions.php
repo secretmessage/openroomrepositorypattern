@@ -110,3 +110,4 @@ class Reservationoptions
         return $this->optionvalue;
     }
 }
+

@@ -218,3 +218,4 @@ class Cancelled
         return $this->timeofcancel;
     }
 }
+
